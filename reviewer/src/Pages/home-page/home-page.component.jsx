@@ -1,6 +1,9 @@
 import React from "react";
 import Styles from "./home-page.module.scss";
 
+//COMPONENTS
+import TaskContainer from "../../Components/Task-Container/task-container.component";
+
 //IMAGES
 import beeCreature from "../../Assets/Creatures/avatar.svg";
 
@@ -15,13 +18,16 @@ const HomePage = () => {
           <span className={Styles.Assignment}>Assignment</span> due
         </h1>
       </div>
-      <div className={`center ${Styles.lower}`}>
+      <div className={`${Styles.lower}`}>
         <div className={`${Styles.lowerInner}`}>
           
-          <div className={Styles.studyButtonContainer}>
+          <div className={`bottom-spacer-2rem ${Styles.studyButtonContainer}`}>
             <button className={`${Styles.studyButton} ${Styles.studyStartButton}`}>Start Studying</button>
             <button className={Styles.studyButton}>Edit Study Plan</button>
           </div>
+
+          <TaskContainer />
+          
           
         </div>
       </div>

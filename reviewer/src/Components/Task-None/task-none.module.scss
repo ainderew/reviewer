@@ -1,0 +1,16 @@
+@import "../../Scss/variables/colors";
+.task{
+    width: 100%;
+    min-height: 5rem;
+    border-radius: .5rem;
+    background: #EBF3FA;
+    box-shadow: inset 5px 5px 10px #d4dbe1, 
+            inset -5px -5px 10px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-weight: 600;
+}

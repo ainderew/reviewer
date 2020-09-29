@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./home-page.module.scss";
+import {Link} from "react-router-dom"
 
 //COMPONENTS
 import TaskContainer from "../../Components/Task-Container/task-container.component";
@@ -18,11 +19,13 @@ const HomePage = () => {
           <span className={Styles.Assignment}>Assignment</span> due
         </h1>
       </div>
-      <div className={`${Styles.lower}`}>
+      <div className={`lowerSlideUp ${Styles.lower}`}>
         <div className={`${Styles.lowerInner}`}>
           
           <div className={`bottom-spacer-2rem ${Styles.studyButtonContainer}`}>
-            <button className={`${Styles.studyButton} ${Styles.studyStartButton}`}>Start Studying</button>
+            <Link to="/StartStudying">
+              <button className={`${Styles.studyButton} ${Styles.studyStartButton}`}>Start Studying</button>
+              </Link>
             <button className={Styles.studyButton}>Edit Study Plan</button>
           </div>
 
